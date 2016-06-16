@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'extendmypage'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pages.tx_extendmypage_headerhtmlcode">Custom HTML/JS Code</label>
+			<label index="tt_content.list_type_pi2">Custom HTML/JS Code</label>
+			<label index="pages.tx_extendmypage_sourceparam">Parameter Source</label>
+			<label index="tt_content.list_type_pi3">Parameter Source</label>
+			<label index="pages.tx_extendmypage_mediumparam">Parameter Medium</label>
+			<label index="tt_content.list_type_pi4">Parameter Medium</label>
+			<label index="pages.tx_extendmypage_contentparam">Parameter Content</label>
+			<label index="tt_content.list_type_pi5">Parameter Content</label>
+			<label index="pages.tx_extendmypage_termparam">Parameter Term</label>
+			<label index="tt_content.list_type_pi6">Parameter Term</label>
+			<label index="pages.tx_extendmypage_nameparam">Parameter Name</label>
+			<label index="tt_content.list_type_pi7">Parameter Name</label>
+		</languageKey>
+	</data>
+</T3locallang>
