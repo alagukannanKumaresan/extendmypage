@@ -164,8 +164,8 @@ $TCA['tt_content']['types']['list']['subtypes_excludelist'][$_EXTKEY.'_pi1']='la
 
 
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages',$tempColumns,8);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages','--div--;Ergo Special, tx_extendmypage_headerhtmlcode');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages',$tempColumns,6);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages','--div--;UTM Parameters, tx_extendmypage_headerhtmlcode');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages','tx_extendmypage_sourceparam', '','after:tx_extendmypage_headerhtmlcode');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages','tx_extendmypage_mediumparam', '','after:tx_extendmypage_sourceparam');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages','tx_extendmypage_contentparam', '','after:tx_extendmypage_mediumparam');
