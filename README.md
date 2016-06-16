@@ -1,7 +1,17 @@
 # extendthepage
-It will extend the page properties as well as help to create 'utm' parameters of Google Analytics
+1. It will extend the page properties.
+2. As well as help us to create 'utm' parameters of Google Analytics.
+3. Page specific option will work just by adding PIDinRootline.(Because you would like to test utm parameters by every page rather than whole website.)
 
-#Required Typoscript to Add in Root Page Template Setup:
+## What you have to do:
+
+1. Pull or Download the extension from my repository, then paste into your folder under typo3conf/ext/.
+2. Then go to Extension Manager and add the extension.
+3. Copy the below Typoscript and add it your Template Root Setup.
+4. Done. 
+
+
+## Required Typoscript to Add in Root Page Template Setup:
 
 ```
 lib.pageconfig {
@@ -55,5 +65,70 @@ lib.pageconfig {
     }
             
 }
+
+
+
+# Use your PID that which page you require to add utm campaign parameters. 
+[PIDinRootline=75]
+
+page.headerData.10  < lib.pageconfig.tx_extendmypage_headerhtmlcode
+
+page.headerData.20 = TEXT
+page.headerData.20.value (
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setCampSourceKey', 1, 'Source', '
+) 
+
+page.headerData.30  < lib.pageconfig.tx_extendmypage_sourceparam
+
+page.headerData.40 = TEXT
+page.headerData.40.value (
+']);
+_gaq.push(['_setCampMediumKey', 2, 'Medium', '
+)
+page.headerData.50  < lib.pageconfig.tx_extendmypage_mediumparam
+
+page.headerData.60 = TEXT
+page.headerData.60.value (
+']);
+_gaq.push(['_setCampContentKey', 3, 'Content', '
+)
+
+page.headerData.70  < lib.pageconfig.tx_extendmypage_contentparam
+
+
+page.headerData.80 = TEXT
+page.headerData.80.value (
+']);
+_gaq.push(['_setCampTermKey', 4, 'Term', '
+)
+
+page.headerData.90  < lib.pageconfig.tx_extendmypage_termparam
+
+
+page.headerData.100 = TEXT
+page.headerData.100.value (
+']);
+_gaq.push(['_setCampNameKey', 5, 'Name', '
+)
+
+page.headerData.110  < lib.pageconfig.tx_extendmypage_nameparam
+
+
+page.headerData.120 = TEXT
+page.headerData.120.value (
+']);
+
+_gaq.push(['_setDomainName', 'www.yourdomain.com']);
+_gaq.push(['myTracker._trackPageview']);
+</script>
+
+)
+
+
+[end]
+
 ```
 
