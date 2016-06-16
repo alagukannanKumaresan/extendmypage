@@ -3,7 +3,7 @@ It will extend the page properties as well as help to create 'utm' parameters of
 
 #Required Typoscript to Add in Root Page Template Setup:
 
-
+```
 lib.pageconfig {
     tx_extendmypage_headerhtmlcode = TEXT
     tx_extendmypage_headerhtmlcode {
@@ -55,5 +55,5 @@ lib.pageconfig {
     }
             
 }
-
+```
 
