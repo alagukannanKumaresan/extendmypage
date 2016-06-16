@@ -149,21 +149,6 @@ $TCA['tt_content']['types']['list']['subtypes_excludelist'][$_EXTKEY.'_pi1']='la
 ),'list_type');
 
 
-
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages',$tempColumns,7);
-
-$TCA['tt_content']['types']['list']['subtypes_excludelist'][$_EXTKEY.'_pi1']='layout,select_key';
-
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array(
-	'LLL:EXT:extendmypage/locallang_db.xml:tt_content.list_type_pi7',
-	$_EXTKEY . '_pi1',
-	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'ext_icon.gif'
-),'list_type');
-
-
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages',$tempColumns,6);
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages','--div--;UTM Parameters, tx_extendmypage_headerhtmlcode');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages','tx_extendmypage_sourceparam', '','after:tx_extendmypage_headerhtmlcode');
