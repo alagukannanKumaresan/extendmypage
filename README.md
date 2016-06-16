@@ -1,4 +1,4 @@
-# extendthepage
+# extendmypage
 1. It will extend the page properties.
 2. As well as help us to create 'utm' parameters of Google Analytics.
 3. Page specific option will work just by adding PIDinRootline.(Because you would like to test utm parameters by every page rather than whole website.)
@@ -8,7 +8,8 @@
 1. Pull or Download the extension from my repository, then paste into your folder under typo3conf/ext/.
 2. Then go to Extension Manager and add the extension.
 3. Copy the below Typoscript and add it your Template Root Setup.
-4. Done. 
+4. Go to Page, Click Edit Pencil, you will see New Tab added 'UTM Parameters'. Just add those required fields, save.
+5. Now go to webpage, see your source code. You will see magic. Your code added there as UTM parameter that Google can use this for Campaigns.
 
 
 ## Required Typoscript to Add in Root Page Template Setup:
