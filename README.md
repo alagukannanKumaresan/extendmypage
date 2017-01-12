@@ -140,3 +140,5 @@ _gaq.push(['myTracker._trackPageview']);
 
 ```
 
+
+## If you have any queries, don't hesitate to poke me. My email id, alagukan@gmail.com 
