@@ -1,6 +1,8 @@
 # extendmypage
 If you are using Typo3 & looking for Google Analytics 'Utm' parameters testing for your campaign management, then you are at right way here ;)
 
+##Download also from Typo3 Website: https://typo3.org/extensions/repository/view/extendmypage
+
 ## Advantage:
 Normally you can't setup the parameters above meta tag. But use this plugin, you will see magic!
 
